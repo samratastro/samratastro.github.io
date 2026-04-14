@@ -2,7 +2,7 @@
 ### Compile the IDL routine called 'create_goft_tables.pro' ==> then run the (similar) following command 
 create_goft_tables, "fe_16_335.410"
 
-### ======= If there are multiple close lines we can check similar like following ==========
+### ======= If there are multiple close lines we can check it similar like the following ==========
 
 ## step 1: Run the following command
 ch_synthetic, 93.92, 93.94, density=10^9, /goft, SNGL_ION='fe_18', output=ion
@@ -36,3 +36,6 @@ oplot, ion.ioneq_logt, ion.lines[1].goft
 
 ## To see the wavelength info of the lines use the following command for the first line
 print, ion.lines[0].wvl
+
+### If there are multiple close lines, we can take a narrow wavelength limit to select a single line like below
+create_goft_tables, "fe_18_93.932", wlim=0.0005
