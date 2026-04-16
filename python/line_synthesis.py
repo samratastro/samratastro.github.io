@@ -1,4 +1,4 @@
-########## Import packages =======================
+########## Import packages ======================
 import yt
 import numpy as np
 import matplotlib.pyplot as plt
